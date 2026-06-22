@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 | 최종 페이지</title>
+    <style>
+        /* 기본 스타일 및 초기화 */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #121212; 
+            color: #e0e0e0; 
+            line-height: 1.6; 
+        }
+        
+        /* 헤더 섹션 */
+        header { 
+            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+            padding: 60px 20px; 
+            text-align: center; 
+            border-bottom: 3px solid #00ffcc; 
+        }
+        header h1 { font-size: 2.5rem; color: #ffffff; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; color: #cccccc; max-width: 600px; margin: 0 auto; }
+
+        /* 메인 컨테이너 */
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        
+        /* 섹션 공통 스타일 */
+        .section-title { 
+            font-size: 1.8rem; 
+            color: #ffffff; 
+            border-bottom: 2px solid #00ffcc; 
+            display: inline-block; 
+            margin-bottom: 25px; 
+            padding-bottom: 5px; 
+        }
+
+        /* 카드 UI (프로젝트 및 스킬) */
+        .card { 
+            background: #1e1e1e; 
+            padding: 25px; 
+            border-radius: 12px; 
+            margin-bottom: 25px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: #00ffcc; margin-bottom: 10px; font-size: 1.3rem; }
+        .card .role { font-size: 0.9rem; color: #aaaaaa; margin-bottom: 15px; font-weight: bold; }
+        
+        /* 태그 (스킬/자격증) */
+        .tag-container { display: flex; flex-wrap: wrap; gap: 10px; }
+        .tag { 
+            background: #333333; 
+            color: #ffffff; 
+            padding: 8px 15px; 
+            border-radius: 20px; 
+            font-size: 0.9rem; 
+            border: 1px solid #444;
+        }
+
+        /* 푸터 */
+        footer { 
+            text-align: center; 
+            padding: 30px; 
+            margin-top: 50px; 
+            border-top: 1px solid #333; 
+            font-size: 0.9rem; 
+            color: #777; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>게임 기획 및 UI/UX 포트폴리오</h1>
+        <p>팀의 원활한 진행을 돕는 든든한 서포터이자, 사용자 친화적인 경험을 고민하는 기획자입니다.</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 class="section-title">Skills & Certifications</h2>
+            <div class="card">
+                <div class="tag-container">
+                    <span class="tag">JLPT N3</span>
+                    <span class="tag">정보처리기사 (목표)</span>
+                    <span class="tag">Figma / Photoshop / Illustrator</span>
+                    <span class="tag">Unity / C# (Basic)</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="card">
+                <h3>Stellar Core (2D 횡스크롤 액션 슈팅)</h3>
+                <p class="role">팀 프로젝트 | 역할: 기획 보조 및 팀 서포트</p>
+                <p>우주를 배경으로 한 보스전 중심의 액션 게임 개발에 참여하여, 팀원들이 원활하게 개발에 집중할 수 있도록 기획 문서를 보조하고 일정을 관리했습니다.</p>
+            </div>
+
+            <div class="card">
+                <h3> 전화 받으세요 (기믹 중심)</h3>
+                <p class="role">프로젝트 | 역할: 스테이지 기믹 설계</p>
+                <p>마우스 감도 변화, 키패드 순서 암기, UI 팝업 방해 등 유저의 반응속도와 인지력을 테스트하는 독특한 게임 제작에 참여했습니다.</p>
+            </div>
+
+            <div class="card">
+                <h3>냉장고 식자재 관리 앱 UI 프로토타입</h3>
+                <p class="role">개인 프로젝트 | 역할: UI/UX 디자인</p>
+                <p>Figma를 활용하여 유통기한 추적 및 맞춤형 레시피 추천 기능을 담은 애플리케이션의 직관적인 인터페이스를 디자인했습니다.</p>
+            </div>
+            
+           
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
